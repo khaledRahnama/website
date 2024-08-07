@@ -1,17 +1,22 @@
-import Footer from "./Footer"
-import Header from "./Header"
-import Food from "./Food"
+import Card from './Card'
+// import './index.css'
 
 function App() {
 
   return (
     <>
-    <Header></Header>
-    <Food></Food>
-    <Footer></Footer>
+     <Card/>
+     <Card/>
+     <Card/>
+     <Card/>
+     <Card/>
+     <Card/>
+     <Card/>
+     <Card/>
+
+
     </>
-  
-  )
+  );
 }
 
 export default App
