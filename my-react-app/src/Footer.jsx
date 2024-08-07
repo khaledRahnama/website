@@ -1,7 +1,7 @@
 function Footer() {
      return(
         <footer> 
-            <p> &copy; { new Date().getFullYear} website name </p>
+            <p> &copy; { new Date().getFullYear()} website name </p>
         </footer>
      );
 }
