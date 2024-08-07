@@ -1,6 +1,6 @@
 function Button() {
 
-    const handleClick = (e) => console.log(e);
+    const handleClick = (e) => e.target.textContent = "ouch ! ☹️ ";
     // const handleClick = () => console.log("OUCH!");
 
     // const handleClick2 = (name) => console.log(`${name} stop clicking me`)
