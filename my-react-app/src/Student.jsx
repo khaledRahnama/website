@@ -1,13 +1,21 @@
-function Student(props){
+import PropTypes from 'prop-types'
 
-    return(
+function Student(props) {
+
+    return (
         <div className="student">
             <p> Name: {props.name} </p>
             <p> Age: {props.age} </p>
-            <p> Student: {props.isStudent? "Yes" : "No" }</p>
+            <p> Student: {props.isStudent ? "Yes" : "No"}</p>
 
-            </div>
+        </div>
     )
+}
+
+Student.propTypes = {
+    name: PropTypes.string,
+    age: PropTypes.number,
+    isStudent: PropTypes.bool,
 
 }
 
