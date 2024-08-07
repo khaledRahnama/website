@@ -1,26 +1,14 @@
-// props = read-only properties that are shared between components. 
-// A parent component can send data to a child component.
-// < component key=value / > 
-
-//propTypes = a mechanism that ensures that the passed value is of the correct datatype.
-// age: PropTypes.number 
-
-//defaultProps = default values for props in case they are not passed from the 
-// parent component 
-// name: "Guest"
-
-
-import Student from './Student'
-
+//Conditional rendering = allows you to control what gets rendered 
+// in your application based on certain conditions 
+// (show , hide , or change components)
+import UserGreeting from "./UserGreeting";
 function App() {
 
   return (
     <>
-<Student name="Spongebob" age={30} isStudent={true}/>
-<Student name="Patrick" age={42} isStudent={false}/>
-<Student name="Squidward" age={42} isStudent={false}/>
-<Student name="Sandy" age={27} isStudent={true}/>
-<Student></Student>
+      <UserGreeting isLoggedIn={true} username="khaled" />
+      <UserGreeting isLoggedIn={false} username="AnotherUser" />
+
     </>
   );
 }
