@@ -28,4 +28,12 @@ function List(props) {
     );
 
 }
+
+
+List.defaultProps = { 
+    category: "category",
+
+    // in case one array is missing 
+    items: [], 
+}
 export default List

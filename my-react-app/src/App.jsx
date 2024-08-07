@@ -32,6 +32,14 @@ function App() {
       {vegetables.length > 0 && <List items={vegetables} category="Vegetables" />
       }
 
+      {/* // category is missing and we are using the default props in List.jsx */}
+      {vegetables.length > 0 && <List items={vegetables} />
+      }
+
+      {/* // in case one array is missing defined in defaultProps */}
+      {vegetables.length > 0 && <List category="Vegetables" />
+      }
+
 
 
     </>
