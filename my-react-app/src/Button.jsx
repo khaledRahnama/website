@@ -23,7 +23,7 @@ function Button() {
         // <button className="button" onClick={handleClick2}> Click me 😀 </button>
         // <button className="button" onClick={()=> handleClick2("Khaled")}> Click me 😀 </button>
         // <button className="button" onClick={()=>handleClick("khaled")}> Click me 😀 </button>
-        <button className="button" onClick={(e) => handleClick(e)}> Click me 😀 </button>
+        <button className="button" onDoubleClick={(e) => handleClick(e)}> Click me 😀 </button>
 
 
     );
