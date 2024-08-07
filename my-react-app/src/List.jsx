@@ -1,10 +1,7 @@
-function List() {
-    const fruits = [{ id: 1, name: 'apple', calories: 95 },
-    { id: 2, name: 'orange', calories: 45 },
-    { id: 3, name: 'banana', calories: 105 },
-    { id: 4, name: 'coconut', calories: 156 },
-    { id: 5, name: 'pineapple', calories: 37 }];
+function List(props) {
 
+    const itemList = props.items;
+    const category = props.category;
 
     // fruits.sort((a,b)=> a.name.localeCompare(b.name)); //alphabetical order
     // fruits.sort((a,b)=> b.name.localeCompare(a.name)); // reverse alphabetical order
@@ -14,17 +11,20 @@ function List() {
 
 
     // const lowCalFruit = fruits.filter(fruit => fruit.calories < 100);
-    const highCalFruit = fruits.filter(fruit => fruit.calories >= 100);
+    // const highCalFruit = fruits.filter(fruit => fruit.calories >= 100);
 
 
 
     // we should have unique keys , so we define ids
-    const listItems = highCalFruit.map(highCalFruit => <li key={highCalFruit.id}>
-        {highCalFruit.name} : &nbsp;
-        <b>{highCalFruit.calories} </b> </li>);
+    const listItems = itemList.map(item => <li key={item.id}>
+        {item.name} : &nbsp;
+        <b>{item.calories} </b> </li>);
 
-    return (
+    return (<>
+        <h3>{category}</h3>
         <ol>{listItems}</ol>
+
+    </>
     );
 
 }
