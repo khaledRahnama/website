@@ -9,7 +9,10 @@ function App() {
       <UserGreeting isLoggedIn={true} username="khaled" />
       <hr />
       <UserGreeting isLoggedIn={false} username="AnotherUser" />
-
+      <hr />
+      <UserGreeting isLoggedIn={true} />
+      <hr />
+      <UserGreeting></UserGreeting>
     </>
   );
 }
