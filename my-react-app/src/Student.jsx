@@ -19,4 +19,10 @@ Student.propTypes = {
 
 }
 
+Student.defaultProps = {
+    name: "Guest",
+    age: 0,
+    isStudent: false ,
+
+}
 export default Student
