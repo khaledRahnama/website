@@ -1,20 +1,11 @@
-import Card from './Card'
-// import './index.css'
+import Button from './Button/Button.jsx'
 
 function App() {
 
   return (
     <>
-     <Card/>
-     <Card/>
-     <Card/>
-     <Card/>
-     <Card/>
-     <Card/>
-     <Card/>
-     <Card/>
 
-
+      <Button></Button>
     </>
   );
 }
